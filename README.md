@@ -32,13 +32,13 @@ An interactive web-based color palette tool that allows you to work with CMYK co
 
 ## Live Demo
 
-Visit [https://leejsinclair.github.io/cmyk-palette/](https://leejsinclair.github.io/cmyk-palette/) to try the tool.
+Visit [https://leejsinclair.github.io/cmyk-colour-palette-generator/](https://leejsinclair.github.io/cmyk-colour-palette-generator/) to try the tool.
 
 ## Local Development
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/leejsinclair/cmyk-palette.git
+   git clone https://github.com/leejsinclair/cmyk-colour-palette-generator.git
    ```
 
 2. Open `index.html` in your browser
