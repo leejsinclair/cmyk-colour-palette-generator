@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMYK Color Palette Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CMYK Color Palette Tool</h1>
+        
+        <div class="color-picker-section">
+            <h2>Select Base Color</h2>
+            <div class="cmyk-inputs">
+                <div class="cmyk-slider">
+                    <label for="cyan">Cyan: <span id="cyanValue">0</span>%</label>
+                    <input type="range" id="cyan" min="0" max="100" value="0">
+                </div>
+                <div class="cmyk-slider">
+                    <label for="magenta">Magenta: <span id="magentaValue">0</span>%</label>
+                    <input type="range" id="magenta" min="0" max="100" value="0">
+                </div>
+                <div class="cmyk-slider">
+                    <label for="yellow">Yellow: <span id="yellowValue">0</span>%</label>
+                    <input type="range" id="yellow" min="0" max="100" value="0">
+                </div>
+                <div class="cmyk-slider">
+                    <label for="key">Key (Black): <span id="keyValue">0</span>%</label>
+                    <input type="range" id="key" min="0" max="100" value="0">
+                </div>
+            </div>
+            <div class="selected-color" id="selectedColor"></div>
+        </div>
+
+        <div class="combination-section">
+            <h2>Color Combinations</h2>
+            <select id="combinationMethod">
+                <option value="complementary">Complementary</option>
+                <option value="monochromatic">Monochromatic</option>
+                <option value="analogous">Analogous</option>
+                <option value="triadic">Triadic</option>
+                <option value="tetradic">Tetradic</option>
+            </select>
+            <div class="palette" id="colorPalette"></div>
+        </div>
+
+        <div class="mixing-section">
+            <h2>Mix Colors</h2>
+            <div class="color-mixing">
+                <select id="mixColor1"></select>
+                <select id="mixColor2"></select>
+            </div>
+            <div class="mixing-preview">
+                <div class="mix-color-1"></div>
+                <div class="mixed-result"></div>
+                <div class="mix-color-2"></div>
+            </div>
+        </div>
+
+        <div class="saved-palettes-section">
+            <h2>Saved Palettes</h2>
+            <div class="save-palette-controls">
+                <input type="text" id="paletteName" placeholder="Enter palette name">
+                <button id="savePalette">Save Current Palette</button>
+            </div>
+            <div id="savedPalettes" class="saved-palettes">
+                <!-- Saved palettes will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
